@@ -1,8 +1,8 @@
 package com.penner.architecture.view;
 
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.penner.architecture.R;
 import com.penner.architecture.base.BaseActivity;

@@ -1,9 +1,9 @@
 package com.penner.architecture.view.databinding;
 
-import android.databinding.BaseObservable;
-import android.databinding.Bindable;
+import androidx.databinding.BaseObservable;
+import androidx.databinding.Bindable;
 
-import com.android.databinding.library.baseAdapters.BR;
+import com.penner.architecture.BR;
 
 /**
  * Created by penneryu on 16/8/29.

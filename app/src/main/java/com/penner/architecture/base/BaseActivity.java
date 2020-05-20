@@ -1,7 +1,8 @@
 package com.penner.architecture.base;
 
-import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Created by penneryu on 16/9/12.

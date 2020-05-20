@@ -1,14 +1,15 @@
 package com.penner.architecture.view.databinding;
 
-import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.v4.widget.SwipeRefreshLayout;
+
+import androidx.databinding.DataBindingUtil;
 
 import com.penner.architecture.R;
 import com.penner.architecture.base.BaseActivity;
 import com.penner.architecture.databinding.ActivityDatabindingBinding;
 import com.penner.architecture.presenter.MvpPresenter;
 import com.penner.architecture.view.MvpView;
+import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 
 public class DatabindingActivity extends BaseActivity implements MvpView {
 
@@ -49,11 +50,11 @@ public class DatabindingActivity extends BaseActivity implements MvpView {
     public void onLoadding(final boolean loadding) {
         viewModel.setLoadding(loadding);
         if (!loadding) {
-            final SwipeRefreshLayout refresh_layout = (SwipeRefreshLayout)findViewById(R.id.refresh_layout);
+            final SmartRefreshLayout refresh_layout = findViewById(R.id.refresh_layout);
             refresh_layout.post(new Runnable() {
                 @Override
                 public void run() {
-                    refresh_layout.setRefreshing(loadding);
+//                    refresh_layout.setRefreshing(loadding);
                 }
             });
         }
